@@ -14,199 +14,170 @@
     
   </head>
   <body>
-    <nav>
-      <div class="nav__content">
-        <div class="logo"><a href="#">Macko.m</a></div>
-        <label for="check" class="checkbox">
-          <i class="ri-menu-line"></i>
-        </label>
-        <input type="checkbox" name="check" id="check" />
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact ">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="section" id="home">
-      <div class="home__container">
-        <div class="content">
-          
-          <h1 class="title">
-           <span>BS ECE</span>
-          </h1>
-          <p class="description">
-            Hi, I'm Malcolm Luther Mendoza, an Electronics and Communications Engineering graduate with a strong passion for technology. Based in Mandaluyong City, Philippines.
-          </p>
-          <div class="action__btns">
-            <button class="resume" onclick="window.location.href='assets/Document1.pdf';">See CV</button>
-          </div>
-        </div>
-        <div class="profile-image">
-          <img src="assets/profile.png" alt="profile" />
-          <div class="social_icons">
-            <a target="_blank" href="https://www.linkedin.com/in/mlclmlthr/" class="icon"><i class="uil uil-linkedin-alt"></i></a>
-            <a target="_blank" href="//github.com/mlclmlthr" class="icon"><i class="uil uil-github-alt"></i></a>
-            <a target="_blank" href="https://www.instagram.com/mlclmlthr/" class="icon"><i class="uil uil-instagram"></i></a>
-        </div>
-        </div>
+    <section class="console-nav" id="console-nav">
+      <span class="console-text">Console:</span>
+      <input type="text" id="console-input" placeholder="Type /about, /projects, /contacts, /download-cv  and press Enter..." autofocus />
+    </section>    
+    
+    <section class="landing">
+      <div class="landing-container">
+        <span class="code-text">Console:</span>
+        <span class="code-text" id="typing-text"></span>
+        
       </div>
     </section>
     <section class="section" id="about">
-      <div class="about__container">
-        <div class="about-image">
-          <img src="assets/01.png" alt="about" id="img1">
-          <img src="assets/02.jpg" alt="about" id="img2">
-          <div class="tech-stack">
-            <h2>TECH Stack |</h2>
-            <img src="assets/icons8-html-48.png" alt="">
-            <img src="assets/icons8-css-48.png" alt="">
-            <img src="assets/icons8-javascript-48.png" alt="">
-            <img src="assets/icons8-figma-48.png" alt="">
-            <img src="assets/icons8-adobe-premiere-pro-48.png" alt="">
-            <img src="assets/icons8-photoshop-48.png" alt="">
+      <div class="home__container">
+        <div class="content">
+          <h1 class="title">
+           <span>ABOUT</span>
+          </h1>
+          <div class="profile-image">
+            <img src="assets/pic.png" alt="profile" />
           </div>
         </div>
-        <div class="about-content">
-          <h1 class="about-title"><span>About Me</span></h1>
-          <p class="about-description"> As a graduate of Electronics Communocation Engineering, I possess skills that will aid me as I work in a professional environment. I have basic knowledge in Electronics, Network troubleshooting, Software and Hardware Troubleshooting. I also developed arsenal skills in HTML, CSS, Basic Knowledge in JavaScript, Bootsrap and SQL. I am a person who thrives in a difficult environment, i am also a good team player in collaborating with cross-functional teams to produce outstanding outputs. </p>
+        <div class="content1">
+          <p class="description">Malcolm Luther Mendoza</p>
+          <p class="description1">2000.12.26</p>
+          <p class="description2">+63 995 450 1659</p>
+          <p class="description3">malcolmlutheramendoza@gmail.com</p>
+          <p class="description4">Rizal Technological University</p>
+          <p class="description5">BS ECE</p>
+          <p class="description6">2019 ~ 2024</p>
+          <p class="description7">AMA Mandaluyong</p>
+          <p class="description8">TVL | ICT</p>
+          <p class="description9">2017 ~ 2019</p>
         </div>
-      </div>
-    </section>
-    <section class="section" id="portfolio">
-      <div class="portfolio_container">
-        <div class="portfolio-content">
-          <h1 class="portfolio-title"><span>Portfolio</span></h1>
-          <p class="portfolio-description">Every project is a chess move, building toward a winning strategy ♟️</p>
+        <div class="content2">
+          <p class="description10">Tech</p>
+          <p class="description11">Experience</p>
         </div>
-    
-        <div class="portfolio-categories">
-          <button class="category-btn" onclick="showCategory('thesis')">Projects</button>
-          <button class="category-btn" onclick="showCategory('video-edits')">Video Edits</button>
-          <button class="category-btn" onclick="showCategory('codes-notes')">Websites</button>
-        </div>
-    
-        <div class="portfolio-content">
-          <div class="category thesis">
-            <div class="grid">
-              <div class="item">
-                <iframe class="thesis"  src="assets/Thesis.pdf" width="800px" height="500px"></iframe>
-                <h3 class="project-title">Deployment of an alarm system using LORAWAN Technology</h3>
-                <p class="project-description">Our undergraduate thesis focuses on designing, developing, and deploying an emergency alarm system using LoRaWAN technology to enhance alarm capabilities during emergencies, assessing its performance in an equatorial setting like the RTU Boni Campus in Mandaluyong, Metro Manila.</p>
-                <div class="project-links">
-                  <a href="assets/Thesis.pdf" target="_blank" class="link-btn">
-                    <i class="uil uil-external-link-alt"></i> Read
-                  </a>
-                </div>
-              </div>
-              <div class="item">Thesis Project 2</div>
-              <div class="item">Thesis Project 3</div>
-            </div>
+        <div class="content3">
+          <div class="under">
+            <p class="description12">HTML</p>
+            <p class="description13">CSS</p>
+            <p class="description13">JavaScript</p>
+            <p class="description13">Figma</p>
+            <p class="description13">Adobe Photoshop</p>
+            <p class="description13">Adobe Premiere Pro</p>
+            <p class="description13">Microsoft Office</p>
+            <p class="description13">Windows Active Directory</p>
+            <p class="description14">Freelancer</p>
+            <p class="description15">2024 ~ Present</p>
+            <p class="description16">IT Support Intern</p>
+            <p class="description17">EE Dept. | RTU</p>
+            <p class="description18">2023.01 ~ 2023.05</p>
           </div>
-    
-          <div class="category video-edits">
-            <div class="grid">
-              <div class="item"><iframe 
-                width="100%" 
-                height="315" 
-                src="https://www.youtube.com/embed/rd_RZbLLFSM" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-              </iframe>
-              <img src="assets/Capture1.PNG" alt="Video Edit 1 Thumbnail" class="portfolio-image">
-            </div>
-              <div class="item"><iframe 
-                width="100%" 
-                height="315" 
-                src="https://www.youtube.com/embed/9GRfnzRsJY0" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-              </iframe>
-              <img src="assets/Capture2.PNG" alt="Video Edit 1 Thumbnail" class="portfolio-image">
-            </div>
-              <div class="item"><video class="video-frame" controls>
-                <source src="assets/neon_vid_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <img src="assets/Capture.PNG" alt="Video Edit 1 Thumbnail" class="portfolio-image">
-            </div>
-            </div>
-          </div>
-    
-          <div class="category codes-notes">
-            <div class="grid">
-              <div class="item">
-                <iframe 
-                  class="embed-frame" 
-                  src="https://mlclmlthr.github.io/MISAMO---beauty/" 
-                  frameborder="0">
-                </iframe>
-                
-                
-                <h3 class="project-title">MISAMO Beauty</h3>
-                
-                
-                <p class="project-description">MISAMO Beauty is a small mock-up jewelry website I created to practice HTML, CSS, and JavaScript, showcasing elegant designs with a sleek and modern layout.</p>
-                <p> HTML CSS JS</p>
-                
-              
-                <div class="project-links">
-                  <a href="https://github.com/mlclmlthr/MISAMO---beauty" target="_blank" class="link-btn">
-                    <i class="uil uil-github-alt"></i> GitHub Code
-                  </a>
-                  <a href="https://mlclmlthr.github.io/MISAMO---beauty/" target="_blank" class="link-btn">
-                    <i class="uil uil-external-link-alt"></i> Live Page
-                  </a>
-                </div>
-              </div>
-              
-              
-              <div class="item">Code Snippet 2</div>
-              <div class="item">Code Snippet 3</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="contact" id="contact">
-      <div class="contact-container">
-        <h2>Contact</h2>
-        <p class="subtitle">Don't be shy, hit me up 🤙</p>
-        <div class="contact-details">
-            <div class="contact-item">
-                <i class="uil uil-map-marker"></i>
-                <div class="contact-info">
-                    <h3>Location</h3>
-                    <p>Mandaluyong, Philippines</p>
-                </div>
-            </div>
-            <div class="contact-item">
-                <i class="uil uil-envelope"></i>
-                <div class="contact-info">
-                    <h3>Gmail</h3>
-                    <p><a href="mailto:malcolmlutheramendoza@gmail.com">malcolmlutheramendoza@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    </section>
 
-    
+        </div>
+      </div>
+    </section>
+    <section class="section1" id="projects">
+      <div class="project__container">
+        <div class="project-content">
+          <div class="project-header">
+            <div class="index-container">
+                <p class="project-index">INDEX</p>
+                <p class="end">02</p>
+            </div>
+            <div class="project-line"></div>
+          </div>
+          <p class="project-description">Projects</p>
+          <h1 class="project-title"><span>CREATIVE ADS</span></h1>
+        </div>
+      </div>
+    </section>
+    <section class="divider-section"></section>
+    <section class="section2" id="projects2">
+      <div class="project2__container">
+        <div class="project-content">
+          <div class="project-header">
+            <div class="index-container">
+                <p class="project-index">INDEX</p>
+                <p class="end">06</p>
+            </div>
+            <div class="project-line"></div>
+          </div>
+          <p class="project-description">Projects</p>
+          <h1 class="project-title"><span>VIDEO EDITS</span></h1>
+        </div>
+      </div>
+    </section>
+    <section class="divider-section"></section>
+    <section class="under-section2">
+      <div class="project-header">
+        <div class="index-container">
+            <p class="project-index">YOUTUBE</p>
+            <p class="end">07</p>
+        </div>
+        <div class="project-line"></div>
+      </div>
+      <div class="iframe-container">
+          <iframe 
+              src="https://www.youtube.com/embed/rd_RZbLLFSM" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+          </iframe>
+          <iframe 
+              src="https://www.youtube.com/embed/9GRfnzRsJY0" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+          </iframe>
+      </div>
+    </section>
+    <section class="under-section2-2">
+      <div class="project-header">
+        <div class="index-container">
+            <p class="project-index">BRANDS</p>
+            <p class="end">08</p>
+        </div>
+        <div class="project-line"></div>
+      </div>
+      <div class="reels-container">
+        <iframe src="https://drive.google.com/file/d/1-iT5UGkgUg3UJvjNmDaKzdxKCDJaqtjv/preview" 
+        width="100%" height="315" allowfullscreen>
+        </iframe>
+        <iframe src="https://drive.google.com/file/d/1CWPlly6wFLuYYf3PvG58mpmmUq5n9pqV/preview" 
+          width="100%" height="315" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+    <section class="under-section2-3">
+      <div class="project-header">
+        <div class="index-container">
+            <p class="project-index">SOCIAL MEDIA</p>
+            <p class="end">09</p>
+        </div>
+        <div class="project-line"></div>
+      </div>
+      <div class="media-container">
+        
+      </div>
+    </section>
+    <section class="divider-section"></section>
+    <section class="section3" id="projects2">
+      <div class="project3__container">
+        <div class="project-content">
+          <div class="project-header">
+            <div class="index-container">
+                <p class="project-index">INDEX</p>
+                <p class="end">12</p>
+            </div>
+            <div class="project-line"></div>
+          </div>
+          <p class="project-description">Projects</p>
+          <h1 class="project-title"><span>CREATIVE ADS</span></h1>
+        </div>
+      </div>
+    </section>
     
   </body>
   
-  <footer>
-    <div class="footer-credits">
-      <p>© 2024 Malcolm Mendoza. All rights reserved.</p>
-    </div>
-  </footer>
+  
   <script src="script.js"></script>
 
 </html>
