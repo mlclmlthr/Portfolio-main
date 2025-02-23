@@ -11,12 +11,12 @@
         i++;
         setTimeout(typeWriter, 100);
       } else {
-        // Add blinking cursor
+        
         const cursor = document.createElement("span");
         cursor.classList.add("blinking-cursor");
         typingText.appendChild(cursor);
   
-        // Show sections with smooth animation
+       
         showSection(".home__container");
         showSection(".project__container");
         showSection(".section2");
@@ -25,6 +25,9 @@
         showSection(".under-section2-2")
         showSection(".section3")
         showSection(".under-section2-3")
+        showSection(".under-section3")
+        showSection(".under-section3-1")
+        showSection(".under-section3-2")
         
       }
     }
@@ -32,10 +35,10 @@
     function showSection(selector) {
       const section = document.querySelector(selector);
       if (section) {
-        section.style.display = "grid"; // First, change display
+        section.style.display = "grid"; 
         setTimeout(() => {
-          section.classList.add("show"); // Then trigger animation
-        }, 50); // Small delay to allow CSS transition
+          section.classList.add("show"); 
+        }, 50); 
       }
     }
   
@@ -48,13 +51,13 @@
   
     window.addEventListener("scroll", function () {
       if (window.scrollY > 90) {
-        consoleNav.style.top = "0"; // Show the console-nav after scrolling 100px
+        consoleNav.style.top = "0"; 
       } else {
-        consoleNav.style.top = "-90px"; // Hide it again if less than 100px
+        consoleNav.style.top = "-90px"; 
       }
     });
   
-    // Placeholder text switching logic every 5 seconds
+    
     const placeholders = [
       "Type /about, /projects, /contact, /download-cv and press Enter...",
       "Try typing /download-cv to get my CV",
@@ -68,13 +71,13 @@
     setInterval(() => {
       currentPlaceholderIndex = (currentPlaceholderIndex + 1) % placeholders.length;
       inputField.placeholder = placeholders[currentPlaceholderIndex];
-    }, 5000); // Change the placeholder every 5 seconds
+    }, 5000); 
   
     inputField.addEventListener("keypress", function (event) {
       if (event.key === "Enter") {
-        event.preventDefault(); // Prevent form submission or new line
+        event.preventDefault(); 
   
-        const command = inputField.value.trim().toLowerCase(); // Get command
+        const command = inputField.value.trim().toLowerCase(); 
   
         if (command === "/about") {
           scrollToSection("about");
@@ -83,10 +86,10 @@
         } else if (command === "/contact") {
           scrollToSection("contact");
         } else if (command === "/download-cv") {
-          downloadCV(); // Trigger the download when the command is /download-cv
+          downloadCV(); 
         } else {
-          inputField.value = "Unknown command"; // Show error message
-          setTimeout(() => (inputField.value = ""), 1500); // Clear error after 1.5s
+          inputField.value = "Unknown command"; 
+          setTimeout(() => (inputField.value = ""), 1500); 
         }
       }
     });
@@ -95,17 +98,17 @@
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
-        inputField.value = ""; // Clear input after navigation
+        inputField.value = ""; 
       }
     }
   
     function downloadCV() {
       const link = document.createElement("a");
-      link.href = "path_to_your_cv.pdf"; // Path to your CV document
-      link.download = "My_CV.pdf"; // The name of the downloaded file
-      link.click(); // Programmatically click the link to trigger the download
-      inputField.value = "Downloading CV..."; // Show message in the input field
-      setTimeout(() => (inputField.value = ""), 1500); // Clear message after 1.5s
+      link.href = "/assets"; 
+      link.download = "Document1.pdf"; 
+      link.click(); 
+      inputField.value = "Downloading CV..."; 
+      setTimeout(() => (inputField.value = ""), 1500); 
     }
   });
   

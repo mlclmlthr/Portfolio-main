@@ -27,6 +27,10 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--extra-light);
 }
+section {
+  min-width: 600px;
+  height: auto;
+}
 .console-nav {
   width: 100%;
   background-color: var(--text-dark);
@@ -85,6 +89,7 @@ body {
 .section {
   background-color: var(--primary-color);
   width: 100%;
+ 
 }
 
 .home__container {
@@ -95,6 +100,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   display: none;
   transition: opacity 1s ease;
+  min-width: 600px;
 }
 
 @keyframes blink {
@@ -270,7 +276,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  width: auto;
+  
 }
 
 .project-title {
@@ -329,6 +335,50 @@ body {
   color: #333;
 }
 
+.project-span {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 150px;
+  padding-top: 2rem;
+}
+.project-link {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--text-dark);
+  padding-bottom: 5px;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--text-light);
+  transition: width 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.project-link:hover {
+  color: #fff;
+}
+
+.project-link:hover::before {
+  width: 100%;
+}
+
+.project-number {
+  font-weight: 700;
+}
+
 
 .iframe-container {
   display: grid;
@@ -366,72 +416,14 @@ body {
   display: flex !important;
   opacity: 1;
 }
-.contact {
-  text-align: center;
+.under-section3 , .under-section3-1, .under-section3-2 {
   padding: 2rem;
-  min-width: 600px;
-  margin-top: 20px; 
-  background-color: #2c3e50;
-  display: none;
+  width: 100%;
+
 }
 
-.contact h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 3rem;
-  color: white;
-  margin-bottom: 1rem;
-}
 
-.subtitle {
-  font-size: 1.2rem;
-  color: white; 
-  margin-bottom: 1.5rem;
-}
 
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.contact-item i {
-  font-size: 2rem; 
-  color: white; 
-}
-
-.contact-info {
-  text-align: left;
-}
-
-.contact-info h3 {
-  font-size: 1.2rem;
-  margin: 0;
-  color: white;
-}
-
-.contact-info p {
-  font-size: 1rem;
-  margin: 0.2rem 0;
-  color: white;
-}
-
-.contact-info a {
-  color: white; 
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-/* Initially hidden */
 .project__container,
 .about__container,
 .section2,
@@ -439,7 +431,7 @@ body {
 .under-section2,
 .under-section2-2,
 .under-section2-3,
-.section3{
+.section3, .under-section3, .under-section3-1, .under-section3-2{
   display: none; 
   opacity: 0;
   transform: translateY(20px);
@@ -453,8 +445,59 @@ body {
   transform: translateY(0);
 }
 
+.site-container-one {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 2rem;
+  padding-bottom: 0;
+  min-width: 600px;
+}
+.thirty {
+  padding-left: 100px;
+}
 
+.thirty span {
+  color: #4A4A4A;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+.thirty p {
+  padding-top: 4rem;
+}
+.thirty a {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #4A4A4A; 
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.thirty a:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: #333;
+}
+
+
+
+
+.seventy {
+  justify-self: center;
+}
+.seventy img {
+ height: 300px;
+ width: 540px;
+ 
+}
 @media (width < 750px) {
+
+  
   nav .checkbox {
     display: block;
   }
@@ -550,9 +593,48 @@ body {
   .console-text {
     padding-left: 0;
   }
-
-
+  .project-description, .project-title, .project-span {
+    padding: 0.6rem !important;
+   
     
+  }
+  .project-description {
+    font-size: 1rem;
+  }
+  .project-title {
+    font-size: 1.8rem;
+  }
+  .project-link {
+   font-size: 1rem;
+  }
 
-  
+  .under-section2, .under-section2-2, .under-section2-3, .under-section3, .under-section3-1, .under-section3-2 {
+    padding: 20px;
+  }
+    
+  .iframe-container, .reels-container {
+    scale: 0.9;
+  }
+  .content {
+    width: 200px;
+  }
+  .section1, .section2, .section3{
+    height: 400px;
+  }
+  .site-container-one {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: auto auto; /* Two rows */
+    padding-left: 0;
+  }
+  .thirty {
+    padding: 0;
+  }
+  .thirty p {
+    padding-top: 1rem;
+  }
+  .seventy {
+    scale: 0.8;
+  }
 }
+
