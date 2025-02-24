@@ -24,10 +24,13 @@
         showSection(".under-section2")
         showSection(".under-section2-2")
         showSection(".section3")
-        showSection(".under-section2-3")
+        //showSection(".under-section2-3");// hidden
         showSection(".under-section3")
         showSection(".under-section3-1")
-        showSection(".under-section3-2")
+        //showSection(".under-section3-2")// hidden
+        showSection(".under-section1-1")
+        showSection(".under-section1-2")
+        showSection(".under-section1-3")
         
       }
     }

@@ -17,6 +17,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  max-width: 1450px;
 }
 
 a {
@@ -25,7 +26,8 @@ a {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--extra-light);
+  background-color: white;
+  max-width: 1450px;
 }
 section {
   min-width: 600px;
@@ -88,19 +90,18 @@ section {
 
 .section {
   background-color: var(--primary-color);
-  width: 100%;
+  max-width: 1450px;
  
 }
 
 .home__container {
-  min-height: 85vh;
-  margin: 1rem;
-  margin-top: 50px;
+  height: 100vh;
   padding-left: 150px;
   grid-template-columns: repeat(4, 1fr);
   display: none;
   transition: opacity 1s ease;
   min-width: 600px;
+  background-color: white;
 }
 
 @keyframes blink {
@@ -260,22 +261,45 @@ section {
 
 .project__container {
   min-height: 60vh;
-  margin: 1rem;
+  padding: 2rem;
   grid-template-columns: repeat(1, 1fr);
   display: none;
+  max-width: 1450px;
+  background-color: #F5F5F5;
+
 }
+.section2 {
+  padding: 1rem;
+  margin: 0;
+  max-width: 1450px;
+  background-color: #1f1f1f;
+  color: white;
+}
+.section2 span, .section2 a, .section2 .project-index, .section2 .end{
+  color: white;
+}
+.section2 .project-line{
+   background-color: white;
+}
+
 .project2__container, .project3__container {
   min-height: 60vh;
   margin: 1rem;
   grid-template-columns: repeat(1, 1fr);
   
 }
-
+.section3 {
+  padding: 1rem;
+  margin: 0;
+  max-width: 1450px;
+  background-color: antiquewhite;
+}
 
 .project-content {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 2rem;
+  max-width: 1450px;
   
 }
 
@@ -308,7 +332,7 @@ section {
   
 }
 .divider-section {
-  width: 100%;
+  max-width: 1450px;
   height: 20px; 
   background-color: white; 
 }
@@ -317,13 +341,22 @@ section {
   display: grid;
   grid-template-rows: auto 1fr; /* Header takes auto height, iframes take remaining space */
   gap: 1rem; /* Adds space between the header and iframes */
-  width: 100%;
+  max-width: 1450px;
+  background-color: #1f1f1f;
+}
+.under-section2 .project-index {
+  color: white;
+}
+.under-section2 .project-line {
+  background-color: white;
+}
+.under-section2 .end {
+  color: white;
 }
 .index-container {
   display: flex;
   justify-content: space-between; /* Push items to both ends */
   align-items: center; /* Align items vertically */
-  width: 100%; /* Ensures full width */
   font-size: 0.7rem;
 }
 
@@ -382,14 +415,16 @@ section {
 
 .iframe-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns for the iframes */
-  gap: 10px; /* Space between the two iframes */
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px; 
   width: 100%;
+  height: 500px;
 }
 
 .under-section2 iframe {
-  width: 100%; /* Makes iframes take full width of their grid column */
-  height: 315px; /* Standard YouTube embed height */
+  width: 100%;
+  height: 400px; 
+  padding-top: 6rem;
 }
 
 .under-section2-2, .under-section2-3 {
@@ -397,13 +432,36 @@ section {
   display: grid;
   grid-template-rows: auto 1fr; /* Header takes auto height, iframes take remaining space */
   gap: 1rem; /* Adds space between the header and iframes */
-  width: 100%;
+  max-width: 1450px;
+  background-color: #1f1f1f;
+  
+}
+.under-section2-2 .project-index {
+  color: white;
+}
+.under-section2-2 .end {
+  color: white;
+}
+.under-section2-2 .project-line {
+  background-color: white;
+}
+.under-section1-1 .project-index {
+  color: white;
+}
+.under-section1-1 .end {
+  color: white;
+
+}
+.under-section1-1 .project-line {
+  background-color: white;
 }
 .reels-container {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns for the iframes */
   gap: 10px; /* Space between the two iframes */
-  width: 100%;
+  max-width: 1450px;
+  height: 500px;
+  padding-top: 5rem;
 }
 
 .reels-container video::-webkit-media-controls {
@@ -416,14 +474,38 @@ section {
   display: flex !important;
   opacity: 1;
 }
-.under-section3 , .under-section3-1, .under-section3-2 {
+.under-section3 , .under-section3-1, .under-section3-2{
   padding: 2rem;
-  width: 100%;
+  max-width: 1450px;
 
 }
-
-
-
+.under-section3{
+  background-color: antiquewhite;
+}
+.under-section3-1 {
+  background-color: antiquewhite;
+}
+.under-section1-1{
+  background-color: #1d1d25;
+  padding: 2rem;
+  max-width: 1450px;
+}
+.under-section1-2{
+  background-color: #6e91a4;
+  padding: 2rem;
+  max-width: 1450px;
+}
+.under-section1-3{
+  background-color: #8d4f2e;
+  padding: 2rem;
+  max-width: 1450px;
+}
+.creative-container {
+  width: auto;;
+}
+.creative-container img{
+  max-width: 100%;
+}
 .project__container,
 .about__container,
 .section2,
@@ -431,7 +513,7 @@ section {
 .under-section2,
 .under-section2-2,
 .under-section2-3,
-.section3, .under-section3, .under-section3-1, .under-section3-2{
+.section3, .under-section3, .under-section3-1, .under-section3-2, .under-section1-1,.under-section1-2, .under-section1-3{
   display: none; 
   opacity: 0;
   transform: translateY(20px);
@@ -446,7 +528,7 @@ section {
 }
 
 .site-container-one {
-  padding-top: 2rem;
+  
   display: grid;
   grid-template-columns: 30% 70%;
   padding: 2rem;
@@ -605,7 +687,7 @@ section {
    font-size: 1rem;
   }
 
-  .under-section2, .under-section2-2, .under-section2-3, .under-section3, .under-section3-1, .under-section3-2 {
+  .under-section2, .under-section2-2, .under-section2-3, .under-section3, .under-section3-1, .under-section3-2, .under-section1-1, .under-section1-2, .under-section1-3 {
     padding: 20px;
   }
     
@@ -633,5 +715,6 @@ section {
   .seventy {
     scale: 0.8;
   }
+  
 }
 
