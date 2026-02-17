@@ -10,14 +10,14 @@
   --text-dark: #4A4A4A;
   --text-light: #6b7280;
   --extra-light: #F5F5F5;
-  --max-width: 1200px;
+
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  max-width: 1450px;
+ 
 }
 
 a {
@@ -27,7 +27,7 @@ a {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: white;
-  max-width: 1450px;
+  
 }
 section {
   min-width: 600px;
@@ -90,8 +90,7 @@ section {
 
 .section {
   background-color: var(--primary-color);
-  max-width: 1450px;
- 
+
 }
 
 .home__container {
@@ -264,14 +263,13 @@ section {
   padding: 2rem;
   grid-template-columns: repeat(1, 1fr);
   display: none;
-  max-width: 1450px;
+
   background-color: #F5F5F5;
 
 }
 .section2 {
   padding: 1rem;
   margin: 0;
-  max-width: 1450px;
   background-color: #1f1f1f;
   color: white;
 }
@@ -291,7 +289,6 @@ section {
 .section3 {
   padding: 1rem;
   margin: 0;
-  max-width: 1450px;
   background-color: antiquewhite;
 }
 
@@ -299,7 +296,6 @@ section {
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
-  max-width: 1450px;
   
 }
 
@@ -332,7 +328,6 @@ section {
   
 }
 .divider-section {
-  max-width: 1450px;
   height: 20px; 
   background-color: white; 
 }
@@ -341,7 +336,6 @@ section {
   display: grid;
   grid-template-rows: auto 1fr; /* Header takes auto height, iframes take remaining space */
   gap: 1rem; /* Adds space between the header and iframes */
-  max-width: 1450px;
   background-color: #1f1f1f;
 }
 .under-section2 .project-index {
@@ -432,7 +426,7 @@ section {
   display: grid;
   grid-template-rows: auto 1fr; /* Header takes auto height, iframes take remaining space */
   gap: 1rem; /* Adds space between the header and iframes */
-  max-width: 1450px;
+
   background-color: #1f1f1f;
   
 }
@@ -476,7 +470,7 @@ section {
 }
 .under-section3 , .under-section3-1, .under-section3-2{
   padding: 2rem;
-  max-width: 1450px;
+
 
 }
 .under-section3{
@@ -488,17 +482,17 @@ section {
 .under-section1-1{
   background-color: #1d1d25;
   padding: 2rem;
-  max-width: 1450px;
+  
 }
 .under-section1-2{
   background-color: #6e91a4;
   padding: 2rem;
-  max-width: 1450px;
+ 
 }
 .under-section1-3{
   background-color: #8d4f2e;
   padding: 2rem;
-  max-width: 1450px;
+
 }
 .creative-container {
   width: auto;;
