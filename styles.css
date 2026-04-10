@@ -245,6 +245,16 @@ section {
   font-weight: 800;
 }
 
+.description19{
+  
+  padding-top: 20px;
+}
+
+.description21{
+  color: var(--text-dark);
+  font-weight: 800;
+}
+
 .profile-image {
   display: block;
   margin: 0; /* Ensure no extra margin */
