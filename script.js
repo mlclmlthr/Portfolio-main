@@ -108,7 +108,7 @@
     function downloadCV() {
       const link = document.createElement("a");
       link.href = "/assets/Resume updated.pdf"; 
-      link.download = "Resume updated.pdf"; 
+      link.download = "Mendoza_CV.pdf"; 
       link.click(); 
       inputField.value = "Downloading CV..."; 
       setTimeout(() => (inputField.value = ""), 1500); 
